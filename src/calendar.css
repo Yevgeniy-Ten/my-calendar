@@ -1,0 +1,75 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    border: 1px solid black;
+    color: #3f3f3f;
+    min-width: 280px;
+}
+
+.calendar__head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f3f3f;
+    align-items: center;
+    padding: 0 5px;
+    color: #f2f3f4;
+}
+
+.calendar__info {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 10px 0;
+}
+
+
+.calendar__weekdays {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.calendar__weekday {
+    flex-basis: 14%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.calendar__days-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar__day {
+    flex-basis: 14%;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 6px 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calendar__btn {
+    background-color: transparent;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 25px;
+    color: #f2f3f4;
+    cursor: pointer;
+}
+
+.calendar__btn:focus {
+    outline: none;
+}
+
+.calendar__day.active {
+    color: #fff;
+    background-color: #5cacdb;
+}
